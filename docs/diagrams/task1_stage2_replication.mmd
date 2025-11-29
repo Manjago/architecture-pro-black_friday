@@ -8,7 +8,7 @@ graph TD
 
     Client((User)) -->|HTTP| API[pymongo-api]:::app
 
-    subgraph DC [Sharded Cluster with HA]
+    subgraph DC ["Sharded Cluster with HA"]
         API -->|Connection String| Mongos[mongos Router]:::router
         
         %% Config Server Replica Set
